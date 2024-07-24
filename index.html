@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vending Machine</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Vending Machine</h1>
+        <div class="items">
+            <div class="row">
+                <div class="item" id="Pepsi">
+                    <img src="/images/soda.png" alt="Item 1" class="item-image">
+                    <div class="name">Item Name: Pepsi</div>
+                    <div class="quantity">Quantity Available: <span class="Available">20</span></div>
+                    <div class="price">Price: Rs.25</div>
+                </div>
+                <div class="item" id="Pizza">
+                    <img src="/images/pizza1.png" alt="Item 2" class="item-image">
+                    <div class="name">Item Name: Pizza</div>
+                    <div class="quantity">Quantity Available: <span class="Available">20</span></div>
+                    <div class="price">Price: Rs.120</div>
+                </div>
+                <div class="item" id="Chocolate">
+                    <img src="/images/chocolate-bar.png" alt="Item 3" class="item-image">
+                    <div class="name">Item Name: Chocolate</div>
+                    <div class="quantity">Quantity Available: <span class="Available">10</span></div>
+                    <div class="price">Price: Rs.40</div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="item" id="Lays">
+                    <img src="/images/chips.png" alt="Item 4" class="item-image">
+                    <div class="name">Item Name: Lays</div>
+                    <div class="quantity">Quantity Available: <span class="Available">10</span></div>
+                    <div class="price">Price: Rs.20</div>
+                </div>
+                <div class="item" id="Cola">
+                    <img src="/images/bottle.png" alt="Item 5" class="item-image">
+                    <div class="name">Item Name: Cola</div>
+                    <div class="quantity">Quantity Available: <span class="Available">15</span></div>
+                    <div class="price">Price: Rs.45</div>
+                </div>
+                <div class="item" id="Slice">
+                    <img src="/images/bottle (1).png" alt="Item 6" class="item-image">
+                    <div class="name">Item Name: Slice</div>
+                    <div class="quantity">Quantity Available: <span class="Available">10</span></div>
+                    <div class="price">Price: Rs.40</div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="item" id="Fries">
+                    <img src="/images/fries.png" alt="Item 7" class="item-image">
+                    <div class="name">Item Name: Fries</div>
+                    <div class="quantity">Quantity Available: <span class="Available">8</span></div>
+                    <div class="price">Price: Rs.80</div>
+                </div>
+                <div class="item" id="Icecream">
+                    <img src="/images/icecream.png" alt="Item 8" class="item-image">
+                    <div class="name">Item Name: Icecream</div>
+                    <div class="quantity">Quantity Available: <span class="Available">10</span></div>
+                    <div class="price">Price: Rs.60</div>
+                </div>
+                <div class="item" id="Popcorn">
+                    <img src="/images/popcorn.png" alt="Item 9" class="item-image">
+                    <div class="name">Item Name: Popcorn</div>
+                    <div class="quantity">Quantity Available: <span class="Available">10</span></div>
+                    <div class="price">Price: Rs.60</div>
+                </div>
+            </div>
+        </div>
+        <div class="purchase-section">
+            <h2>Purchase</h2>
+            <div class="inputs">
+                <label for="item">Select Item: </label>
+                <select name="item" id="item">
+                    <option value disabled selected>Select Item</option>
+                    <option value="Pepsi">Pepsi</option>
+                    <option value="Pizza">Pizza</option>
+                    <option value="Chocolate">Chocolate</option>
+                    <option value="Lays">Lays</option>
+                    <option value="Cola">Cola</option>
+                    <option value="Slice">Slice</option>
+                    <option value="Popcorn">Popcorn</option>
+                    <option value="Fries">Fries</option>
+                    <option value="Icecream">Icecream</option>
+                </select>
+            </div>
+            <div class="inputs">
+                <label for="quantity">Quantity: </label>
+                <input type="number" id="quantity" min="1">
+            </div>
+            <div class="inputs">
+                <label for="amount">Amount: </label>
+                <input type="number" id="amount" min="10">
+            </div>
+            <button onclick=buyItem()>Buy</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
